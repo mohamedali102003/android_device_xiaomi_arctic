@@ -75,11 +75,11 @@
 /usb_otg    auto        /dev/block/sdd1 /dev/block/sdd        flags=display="USB-OTG";backup=0;storage;wipeingui;removable;fsflags="utf8"
 
 #DYNAMIC
-/system_image      emmc      /dev/block/mapper/system             flags=display="System Image";logical;backup=1;flashimg=1
-/system_ext_image  emmc      /dev/block/mapper/system_ext         flags=display="System_EXT Image";logical;backup=1;flashimg=1
-/vendor_image      emmc      /dev/block/mapper/vendor             flags=display="Vendor Image";logical;backup=1;flashimg=1
-/product_image     emmc      /dev/block/mapper/product            flags=display="Product Image";logical;backup=1;flashimg=1
-/odm_image         emmc      /dev/block/mapper/odm                flags=display="ODM Image";logical;backup=1;flashimg=1
-/mi_ext_image      emmc      /dev/block/mapper/mi_ext             flags=display=mi_ext;slotselect;backup=1;flashimg=1
-/vendor_dlkm_image emmc     /dev/block/mapper/vendor_dlkm        flags=display="Vendor_DLKM Image";logical;backup=1;flashimg=1
-/system_dlkm_image emmc     /dev/block/mapper/system_dlkm        flags=display="System_DLKM Image";logical;backup=1;flashimg=1
+/system            emmc    /dev/block/mapper/system          flags=display="System Image";slotselect;backup=1;flashimg=1
+/system_ext        emmc    /dev/block/mapper/system_ext      flags=display="System_EXT Image";slotselect;backup=1;flashimg=1
+/vendor            emmc    /dev/block/mapper/vendor          flags=display="Vendor Image";slotselect;backup=1;flashimg=1
+/odm               emmc    /dev/block/mapper/odm             flags=display="ODM Image";slotselect;backup=1;flashimg=1
+/mi_ext            emmc    /dev/block/mapper/mi_ext          flags=display=mi_ext;slotselect;backup=1;flashimg=1
+/product           emmc    /dev/block/mapper/product         flags=display="Product Image";slotselect;backup=1;flashimg=1
+/vendor_dlkm       emmc    /dev/block/mapper/vendor_dlkm     flags=display="Vendor_DLKM Image";slotselect;backup=1;flashimg=1
+/system_dlkm       emmc    /dev/block/mapper/system_dlkm     flags=display="System_DLKM Image";slotselect;backup=1;flashimg=1
