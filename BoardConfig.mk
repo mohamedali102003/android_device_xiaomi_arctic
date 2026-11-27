@@ -157,8 +157,8 @@ TW_MAX_BRIGHTNESS := 4095
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone1/temp"
 TW_DEFAULT_BRIGHTNESS := 4095
 TW_CUSTOM_BATTERY_PATH := /sys/devices/platform/charger-manager/power_supply/battery
-TW_Y_OFFSET := 45
-TW_H_OFFSET := -45
+TW_Y_OFFSET := 51
+TW_H_OFFSET := -51
 
 # EXCLUDE TWRP CONFIG
 TW_EXCLUDE_DEFAULT_USB_INIT := true
