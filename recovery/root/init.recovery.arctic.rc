@@ -122,6 +122,20 @@ on property:ro.debuggable=1
 on property:ro.bootmode=recovery
     class_start recovery
 
+# Load the EEA TD4160 touch controller after the kernel module list has been
+# processed.  The driver needs the firmware in /vendor/firmware (kept in the
+# recovery ramdisk) or /odm/firmware once the ODM partition is mounted.
+on init
+    start load_touch
+
+service load_touch /system/bin/sh /system/bin/load_touch.sh
+    class main
+    user root
+    group root system
+    seclabel u:r:recovery:s0
+    disabled
+    oneshot
+
 # for grf
 
 on property:ro.odm.build.fingerprint=*
